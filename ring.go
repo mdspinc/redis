@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-redis/redis/internal"
-	"github.com/go-redis/redis/internal/consistenthash"
-	"github.com/go-redis/redis/internal/hashtag"
-	"github.com/go-redis/redis/internal/pool"
+	"github.com/mdspinc/redis/internal"
+	"github.com/mdspinc/redis/internal/consistenthash"
+	"github.com/mdspinc/redis/internal/hashtag"
+	"github.com/mdspinc/redis/internal/pool"
 )
 
 const nreplicas = 100

@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-redis/redis/internal"
-	"github.com/go-redis/redis/internal/pool"
-	"github.com/go-redis/redis/internal/proto"
-	"github.com/go-redis/redis/internal/util"
+	"github.com/mdspinc/redis/internal"
+	"github.com/mdspinc/redis/internal/pool"
+	"github.com/mdspinc/redis/internal/proto"
+	"github.com/mdspinc/redis/internal/util"
 )
 
 type Cmder interface {

@@ -517,9 +517,10 @@ func (c *clusterState) IsConsistent() bool {
 		return true
 	}
 
-	if len(c.Masters) > len(c.Slaves) {
-		return false
-	}
+	// Fix the case when the nodes in cluster has no slaves
+	//if len(c.Masters) > len(c.Slaves) {
+	//	return false
+	//}
 
 	for _, master := range c.Masters {
 		s := master.Client.Info("replication").Val()

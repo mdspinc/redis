@@ -584,6 +584,10 @@ func (c *clusterState) IsConsistent() bool {
 	if c.nodes.opt.ClusterSlots != nil {
 		return true
 	}
+	if len(c.Slaves) == 0 {
+		// Correctly handle clusters w/o slaves.
+		return true
+	}
 	return len(c.Masters) <= len(c.Slaves)
 }
 
